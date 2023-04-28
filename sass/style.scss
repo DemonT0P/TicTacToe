@@ -1,0 +1,17 @@
+body {
+  background-color: lightblue;
+}
+
+.gameboard {
+  padding: 4px;
+  width: 600px;
+  height: 600px;
+  background-color: black;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
+
+.gameboard__box {
+  background-color: lightcoral;
+  border: 1px solid black;
+}
