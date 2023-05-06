@@ -5,20 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="./script/script.js"></script>
+    <script src="./script/script.js" defer></script>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
+
   <body>
+    <div class="header">
+      <h1>TIC-TAC-TOE</h1>
+      <h2 class="header__player-turn">&nbsp</h2>
+      <h2 class="header__score"></h2>
+      <button class="header__play">START GAME</button>
+      <button class="header__clean">CLEAN BOARD</button>
+    </div>
+    <dialog class="dialog" close>
+      <form class="dialog__form">
+        <label for="p1">PLAYER 1 (X):</label>
+        <input type="text" name="p1" id="p1" placeholder=" Player 1's Name" />
+        <label for="p2">PLAYER 2 (O):</label>
+        <input type="text" name="p2" id="p2" placeholder=" Player 2's Name" />
+        <button class="dialog__start">START GAME</button>
+      </form>
+    </dialog>
     <div class="gameboard">
-      <div class="gameboard__box"></div>
-      <div class="gameboard__box"></div>
-      <div class="gameboard__box"></div>
-      <div class="gameboard__box"></div>
-      <div class="gameboard__box"></div>
-      <div class="gameboard__box"></div>
-      <div class="gameboard__box"></div>
-      <div class="gameboard__box"></div>
-      <div class="gameboard__box"></div>
+      <div class="gameboard__box" data-index="0"></div>
+      <div class="gameboard__box" data-index="1"></div>
+      <div class="gameboard__box" data-index="2"></div>
+      <div class="gameboard__box" data-index="3"></div>
+      <div class="gameboard__box" data-index="4"></div>
+      <div class="gameboard__box" data-index="5"></div>
+      <div class="gameboard__box" data-index="6"></div>
+      <div class="gameboard__box" data-index="7"></div>
+      <div class="gameboard__box" data-index="8"></div>
     </div>
   </body>
 </html>
